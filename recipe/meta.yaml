@@ -1,0 +1,38 @@
+{% set name = "delocate" %}
+{% set version = "0.8.2" %}
+{% set sha256 = "8c7e2f941b9613a1137c1cbde17e5956394ee4fa4a69d2897025275e69018c6a" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  skip: true  # [not osx]
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - wheel
+
+test:
+  imports:
+    - delocate
+  commands:
+    - delocate-listdeps -h
+    - delocate-wheel -h
+
+about:
+  home: https://github.com/matthew-brett/delocate
+  license: BSD-2-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: Move OSX dynamic libraries into package
