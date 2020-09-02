@@ -15,10 +15,44 @@ Current build status
 ====================
 
 
-<table><tr>
-    <td>All platforms:</td>
+<table>
+    
+  <tr>
+    <td>Azure</td>
     <td>
-      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/nsls2forge/nsls2forge/_build/latest?definitionId=254&branchName=master">
+            <img src="https://dev.azure.com/nsls2forge/nsls2forge/_apis/build/status/delocate-feedstock?branchName=master">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>osx_64_python3.6</td>
+              <td>
+                <a href="https://dev.azure.com/nsls2forge/nsls2forge/_build/latest?definitionId=254&branchName=master">
+                  <img src="https://dev.azure.com/nsls2forge/nsls2forge/_apis/build/status/delocate-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_python3.7</td>
+              <td>
+                <a href="https://dev.azure.com/nsls2forge/nsls2forge/_build/latest?definitionId=254&branchName=master">
+                  <img src="https://dev.azure.com/nsls2forge/nsls2forge/_apis/build/status/delocate-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_python3.8</td>
+              <td>
+                <a href="https://dev.azure.com/nsls2forge/nsls2forge/_build/latest?definitionId=254&branchName=master">
+                  <img src="https://dev.azure.com/nsls2forge/nsls2forge/_apis/build/status/delocate-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.8" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
     </td>
   </tr>
 </table>
