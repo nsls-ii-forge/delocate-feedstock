@@ -1,6 +1,6 @@
 {% set name = "delocate" %}
-{% set version = "0.9.0" %}
-{% set sha256 = "fa71952921af4910163e8de7c36290e5bc94cb3c3bce4ea00fe327a19f313eba" %}
+{% set version = "0.9.1" %}
+{% set sha256 = "960c02f3949b5e285dc3c98585c9064d05e7161c270441527748377e9aef4033" %}
 
 package:
   name: {{ name|lower }}
